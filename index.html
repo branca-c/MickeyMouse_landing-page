@@ -28,7 +28,7 @@
 
       <div class="hero-buttons">
         <a class="btn primary" href="#timeline">Scopri la Timeline</a>
-        <a class="btn ghost" href="#facts">Curiosità</a>
+        <a class="btn ghost" href="#friends">Incontra gli amici</a>
       </div>
     </div>
   </header>
@@ -42,7 +42,6 @@
       </p>
 
       <div class="timeline-list">
-
         <article class="timeline-item">
           <div class="timeline-dot" aria-hidden="true"></div>
           <div class="timeline-card">
@@ -93,19 +92,83 @@
             </div>
           </div>
         </article>
-
       </div>
     </section>
 
     <!-- FRIENDS -->
-    <section id="friends" class="section">
+    <section id="friends" class="section friends">
       <h2>👥 Mickey & Friends</h2>
       <p class="section-subtitle">
         Una squadra di personalità diversissime: energia, caos, dolcezza e un pizzico di follia.
       </p>
-      <p style="margin-top:14px; opacity:.85;">
-        (Qui nel prossimo step mettiamo le card di Minnie, Donald, Goofy, Pluto.)
-      </p>
+
+      <div class="friends-spotlight">
+        <div class="spotlight-badge">Spotlight</div>
+        <h3 class="spotlight-title">Mickey Mouse</h3>
+        <p class="spotlight-text">
+          Ottimismo, coraggio e curiosità. Mickey è il “centro di gravità” della banda:
+          sempre pronto a mettersi nei guai… e a trovare una soluzione con stile.
+        </p>
+        <div class="chips">
+          <span class="chip">Leader</span>
+          <span class="chip">Curioso</span>
+          <span class="chip">Iconico</span>
+        </div>
+      </div>
+
+      <div class="friends-grid">
+        <article class="friend-card minnie">
+          <div class="friend-top">
+            <h3>Minnie</h3>
+            <span class="friend-emoji">🎀</span>
+          </div>
+          <p>Elegante, dolce e determinata. Ha sempre un piano… o almeno un’idea brillante.</p>
+          <div class="chips">
+            <span class="chip">Stile</span>
+            <span class="chip">Determinazione</span>
+            <span class="chip">Cuore</span>
+          </div>
+        </article>
+
+        <article class="friend-card donald">
+          <div class="friend-top">
+            <h3>Donald</h3>
+            <span class="friend-emoji">🦆</span>
+          </div>
+          <p>Caotico, esplosivo, adorabile. Si arrabbia in 0.2 secondi… ma ci tieni lo stesso.</p>
+          <div class="chips">
+            <span class="chip">Chaos</span>
+            <span class="chip">Comicità</span>
+            <span class="chip">Impulsivo</span>
+          </div>
+        </article>
+
+        <article class="friend-card goofy">
+          <div class="friend-top">
+            <h3>Goofy</h3>
+            <span class="friend-emoji">🤪</span>
+          </div>
+          <p>Improbabile genio del caso: inciampa, sbaglia, ma spesso… risolve proprio lui.</p>
+          <div class="chips">
+            <span class="chip">Sincero</span>
+            <span class="chip">Surreale</span>
+            <span class="chip">Fortunato</span>
+          </div>
+        </article>
+
+        <article class="friend-card pluto">
+          <div class="friend-top">
+            <h3>Pluto</h3>
+            <span class="friend-emoji">🐶</span>
+          </div>
+          <p>Leale, istintivo, tenerissimo. Non parla, ma comunica più di tutti.</p>
+          <div class="chips">
+            <span class="chip">Lealtà</span>
+            <span class="chip">Istinto</span>
+            <span class="chip">Tenerezza</span>
+          </div>
+        </article>
+      </div>
     </section>
 
     <!-- FUN FACTS -->
@@ -114,6 +177,7 @@
       <p class="section-subtitle">
         Curiosità, easter egg e mini-quiz per rendere la landing più “giocosa”.
       </p>
+
       <p style="margin-top:14px; opacity:.85;">
         (Nel prossimo step aggiungiamo un layout a card/accordion, anche senza JS.)
       </p>
@@ -123,8 +187,6 @@
   <footer class="footer">
     <p>Fan project • Non affiliato a Disney</p>
   </footer>
-
-  <!-- JS opzionale (per ora non serve) -->
-  <!-- <script src="js/main.js" defer></script> -->
 </body>
 </html>
+
