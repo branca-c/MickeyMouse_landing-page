@@ -172,15 +172,80 @@
     </section>
 
     <!-- FUN FACTS -->
-    <section id="facts" class="section">
+    <section id="facts" class="section facts">
       <h2>✨ Fun Facts</h2>
       <p class="section-subtitle">
-        Curiosità, easter egg e mini-quiz per rendere la landing più “giocosa”.
+        Piccole curiosità e mini “easter egg”. Accordion fatto in HTML puro (niente JS).
       </p>
 
-      <p style="margin-top:14px; opacity:.85;">
-        (Nel prossimo step aggiungiamo un layout a card/accordion, anche senza JS.)
-      </p>
+      <div class="facts-grid">
+
+        <details class="fact-card">
+          <summary>
+            <span class="fact-emoji">🎬</span>
+            <span class="fact-title">Perché “1928” è così importante?</span>
+            <span class="fact-plus" aria-hidden="true">+</span>
+          </summary>
+          <div class="fact-body">
+            <p>
+              È l’anno del debutto pubblico di Mickey in uno dei corti più famosi.
+              Da lì nasce un’icona che attraversa generazioni.
+            </p>
+          </div>
+        </details>
+
+        <details class="fact-card">
+          <summary>
+            <span class="fact-emoji">🎵</span>
+            <span class="fact-title">Il ritmo: metà della magia</span>
+            <span class="fact-plus" aria-hidden="true">+</span>
+          </summary>
+          <div class="fact-body">
+            <p>
+              Nei corti classici, musica e gag sono coreografate come un piccolo musical:
+              il timing comico diventa “linguaggio”.
+            </p>
+          </div>
+        </details>
+
+        <details class="fact-card">
+          <summary>
+            <span class="fact-emoji">🧩</span>
+            <span class="fact-title">Il “team” rende Mickey memorabile</span>
+            <span class="fact-plus" aria-hidden="true">+</span>
+          </summary>
+          <div class="fact-body">
+            <p>
+              Minnie, Donald, Goofy e Pluto funzionano come archetipi:
+              ognuno porta un tipo diverso di energia. Insieme, equilibrio perfetto.
+            </p>
+          </div>
+        </details>
+
+        <details class="fact-card">
+          <summary>
+            <span class="fact-emoji">🧠</span>
+            <span class="fact-title">Easter egg per la tua landing</span>
+            <span class="fact-plus" aria-hidden="true">+</span>
+          </summary>
+          <div class="fact-body">
+            <p>
+              Pro tip: aggiungi un bottone “Random fact” o un mini quiz.
+              Lo faremo con poche righe di JS nel prossimo step.
+            </p>
+          </div>
+        </details>
+
+      </div>
+
+      <div class="facts-cta">
+        <p><strong>Vuoi un tocco “pro”?</strong> Nel prossimo step aggiungiamo:</p>
+        <ul>
+          <li>link attivo nella navbar mentre scrolli</li>
+          <li>bottone “Back to top”</li>
+          <li>un “Random fact” (mini JS)</li>
+        </ul>
+      </div>
     </section>
   </main>
 
