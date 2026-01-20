@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mickey & Friends — Una timeline colorata</title>
+  <meta name="description" content="Landing fan-made che celebra Mickey Mouse e il suo entourage con timeline, curiosità e cards." />
+  <link rel="stylesheet" href="./CSS/style.css" />
+</head>
+
+<body>
+  <!-- Background decor -->
+  <div class="bg-dots" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Vai in cima">
+      <span class="brand__mark" aria-hidden="true">◎</span>
+      <span class="brand__text">Mickey & Friends</span>
+    </a>
+
+    <nav class="nav">
+      <a class="nav__link" href="#timeline">Timeline</a>
+      <a class="nav__link" href="#friends">Entourage</a>
+      <a class="nav__link" href="#facts">Fun facts</a>
+    </nav>
+
+    <a class="cta cta--small" href="#timeline">Inizia il viaggio</a>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="pill">Fan-made • Landing challenge</p>
+          <h1>
+            Il topo più famoso del mondo,
+            <span class="highlight">in una pagina</span>.
+          </h1>
+          <p class="lead">
+            Una mini-mostra colorata che ripercorre la storia di Mickey Mouse e dei suoi amici:
+            momenti chiave, curiosità e un po’ di magia.
+          </p>
+
+          <div class="hero__actions">
+            <a class="cta" href="#timeline">Scopri la timeline</a>
+            <a class="ghost" href="#facts">Vai alle curiosità</a>
+          </div>
+
+          <ul class="hero__stats" aria-label="Statistiche rapide">
+            <li class="stat">
+              <span class="stat__num">1928</span>
+              <span class="stat__label">debutto</span>
+            </li>
+            <li class="stat">
+              <span class="stat__num">5+</span>
+              <span class="stat__label">amici iconici</span>
+            </li>
+            <li class="stat">
+              <span class="stat__num">∞</span>
+              <span class="stat__label">nostalgia</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero__art" aria-label="Illustrazione decorativa">
+          <div class="poster">
+            <div class="poster__ring"></div>
+            <div class="poster__face" aria-hidden="true">
+              <span class="ear ear--l"></span>
+              <span class="ear ear--r"></span>
+              <span class="head"></span>
+              <span class="spark s1"></span>
+              <span class="spark s2"></span>
+              <span class="spark s3"></span>
+            </div>
+            <p class="poster__caption">
+              Suggerimento: aggiungi in <code>assets/img</code> immagini storiche (public domain) e sostituisci questa illustrazione.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section id="timeline" class="section">
+      <div class="container">
+        <header class="section__head">
+          <h2>Timeline</h2>
+          <p>Capitoli brevi: il “prima”, il “boom”, le trasformazioni.</p>
+        </header>
+
+        <ol class="timeline">
+          <li class="timeline__item reveal">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__card">
+              <h3>1928 — Steamboat Willie</h3>
+              <p>
+                L’inizio della leggenda: Mickey entra nella cultura pop e da lì non esce più.
+              </p>
+              <div class="tagrow">
+                <span class="tag">Origini</span>
+                <span class="tag">Bianco e nero</span>
+              </div>
+            </div>
+          </li>
+
+          <li class="timeline__item reveal">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__card">
+              <h3>Anni 30–40 — L’era dei corti</h3>
+              <p>
+                La personalità si definisce: gag, ritmo, espressività. Nasce un linguaggio.
+              </p>
+              <div class="tagrow">
+                <span class="tag">Corti</span>
+                <span class="tag">Commedia</span>
+              </div>
+            </div>
+          </li>
+
+          <li class="timeline__item reveal">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__card">
+              <h3>Oggi — Icona globale</h3>
+              <p>
+                Mickey diventa un simbolo che attraversa generazioni: un “alfabeto visivo” riconoscibile ovunque.
+              </p>
+              <div class="tagrow">
+                <span class="tag">Cultura pop</span>
+                <span class="tag">Generazioni</span>
+              </div>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- FRIENDS -->
+    <section id="friends" class="section section--alt">
+      <div class="container">
+        <header class="section__head">
+          <h2>L’entourage</h2>
+          <p>Ognuno con un ruolo: cuore, caos, lealtà, comicità.</p>
+        </header>
+
+        <div class="grid cards">
+          <article class="card reveal">
+            <div class="card__icon">🎀</div>
+            <h3>Minnie</h3>
+            <p>Eleganza, grinta e dolcezza: l’equilibrio perfetto del duo.</p>
+            <button class="mini" type="button" data-fact="minnie">Curiosità</button>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__icon">🦆</div>
+            <h3>Donald</h3>
+            <p>Il re della frustrazione comica: esplode, ma lo amiamo per quello.</p>
+            <button class="mini" type="button" data-fact="donald">Curiosità</button>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__icon">🐶</div>
+            <h3>Pluto</h3>
+            <p>Lealtà senza parole: emozioni pure, con orecchie che dicono tutto.</p>
+            <button class="mini" type="button" data-fact="pluto">Curiosità</button>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__icon">🤪</div>
+            <h3>Goofy</h3>
+            <p>Genio del caos gentile: inciampa, ma finisce sempre in piedi (più o meno).</p>
+            <button class="mini" type="button" data-fact="goofy">Curiosità</button>
+          </article>
+        </div>
+
+        <div class="notice" role="note">
+          <strong>Tip:</strong> nello Step 2 inseriamo immagini (safe) e una mini sezione “gallery”.
+        </div>
+      </div>
+    </section>
+
+    <!-- FUN FACTS -->
+    <section id="facts" class="section">
+      <div class="container">
+        <header class="section__head">
+          <h2>Fun facts</h2>
+          <p>Piccoli dettagli che rendono tutto più “vivo”.</p>
+        </header>
+
+        <div class="accordion">
+          <details class="acc reveal">
+            <summary>Perché Mickey è così riconoscibile?</summary>
+            <p>
+              Forme semplici, silhouette leggibile e una personalità “universale”: ottimismo + curiosità + coraggio.
+            </p>
+          </details>
+
+          <details class="acc reveal">
+            <summary>Qual è il “superpotere” dell’entourage?</summary>
+            <p>
+              Mickey funziona come centro di gravità: gli amici creano contrasti (ordine/caos, calma/esplosioni) e quindi storie.
+            </p>
+          </details>
+
+          <details class="acc reveal">
+            <summary>Come posso renderla più “wow” senza JS pesante?</summary>
+            <p>
+              Micro-animazioni CSS, una palette coerente, card con profondità, e una timeline con reveal su scroll (lo facciamo con 15 righe di JS).
+            </p>
+          </details>
+        </div>
+
+        <footer class="footer">
+          <p class="disclaimer">
+            Fan project non ufficiale. Niente affiliazione con Disney. Usa immagini con licenze adeguate / pubblico dominio.
+          </p>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <!-- Tiny modal -->
+  <dialog class="modal" id="factModal" aria-label="Curiosità">
+    <div class="modal__box">
+      <p class="modal__title">Curiosità</p>
+      <p class="modal__text" id="factText"></p>
+      <button class="cta" id="closeModal" type="button">Ok</button>
+    </div>
+  </dialog>
+
+  <script src="./app.js" defer></script>
+</body>
+</html>
+
